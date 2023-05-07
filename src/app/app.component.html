@@ -27,8 +27,9 @@
     />
   </div>
 
-  {{resultString}}
-
+  <span id="result-string">
+    {{resultString}}
+  </span>
   <div class="terminal">
     <pre *ngFor="let resultPiece of resultString.split('/')">{{resultPiece}}</pre>
   </div>
