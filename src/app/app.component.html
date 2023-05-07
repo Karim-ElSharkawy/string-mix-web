@@ -3,7 +3,7 @@
 </div>
 
 <div class="content" role="main">
-
+  <h2>Change input to show results instantly</h2>
   <!-- two input fields that output their output in a third field -->
   <div class="input-field">
     <label class="input-field-label" for="input-1">First String</label>
@@ -26,7 +26,9 @@
            (input)="stringMix()"
     />
   </div>
+
   {{resultString}}
+
   <div class="terminal">
     <pre *ngFor="let resultPiece of resultString.split('/')">{{resultPiece}}</pre>
   </div>
